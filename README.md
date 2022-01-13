@@ -8,6 +8,8 @@ For a full overview of Azure Durable Functions, go to [Microsoft's documentation
 
 This project is built on the .NET Core 3.1 Framework, so if you don't have that installed you can get it from the [download page](https://dotnet.microsoft.com/en-us/download/dotnet/3.1).
 
+You will also need [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash%2Ckeda#install-the-azure-functions-core-tools) to test and develop Azure functions locally.
+
 Durable Functions rely on an Azure storage account to store the state of an orchestration. For this demo I just used my local storage, and in order to do that on your machine you will need to install [azurite](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite?tabs=visual-studio#install-azurite).
 
 ## Usage
