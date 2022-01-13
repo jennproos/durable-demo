@@ -12,7 +12,11 @@ Durable Functions rely on an Azure storage account to store the state of an orch
 
 ## Usage
 
-Open the project in Visual Studio Code and open a terminal in the root directory. Run `dotnet build`. In a separate terminal, simply run `azurite` to boot up your local storage. Finally, start debugging the project by either clicking `Run` then `Start Debugging` or pressing `F5`
+1. Open the project in Visual Studio Code and open a terminal in the root directory.
+2. Run `dotnet build`.
+3. In a separate terminal, simply run `azurite` to boot up your local storage.
+4. Copy and paste the `local.settings.example.json` file in your root directory and name it `local.settings.json`
+5. Finally, start debugging the project by either clicking `Run` then `Start Debugging` or pressing `F5`
 
 It may take a couple seconds to start but eventually you should see something like this in your terminal indicating that the project is running:
 
