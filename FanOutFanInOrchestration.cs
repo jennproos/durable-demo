@@ -14,8 +14,11 @@ namespace Meijer.Function
     {
         [FunctionName("FanOutFanInOrchestration")]
         public static async Task<string> RunOrchestrator(
-            [OrchestrationTrigger] IDurableOrchestrationContext context)
+            [OrchestrationTrigger] IDurableOrchestrationContext context,
+            ILogger log)
         {
+            log.LogInformation("Inside Fan Out Fan In Orchestrator");
+            
             var parallelTasks = new List<Task<int>>();
 
             // Get a list of N work items to process in parallel.
