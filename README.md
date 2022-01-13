@@ -43,6 +43,6 @@ For detailed output, run func with --verbose flag.
 [2022-01-13T15:39:23.475Z] Host lock lease acquired by instance ID '000000000000000000000000C97C1807'.  
 ```
 
-If you see an error message saying `Failed to verify "AzureWebJobsStore" connection specified in "local.settings.json"`, make sure you run `azurite` in a separate terminal before starting the debugger.
+If you see an error message saying `Failed to verify "AzureWebJobsStorage" connection specified in "local.settings.json"`, make sure you run `azurite` in a separate terminal before starting the debugger.
 
 Both orchestrations can be started by `ctrl + click`ing on the links listed in the terminal after starting up the project. Set some breakpoints and check out the terminal logs to see the true ✨magic✨ of durable functions!
